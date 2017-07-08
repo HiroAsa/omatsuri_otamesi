@@ -24,7 +24,7 @@
 */
 	/*-----mmenu設定-----*/
 	
-
+/*
 	$("#leftSlidebar").mmenu({
 		slidingSubmenus: false,
 		offCanvas: {
@@ -33,7 +33,7 @@
 		}
 	});
 
-
+*/
 	var firstH = 300;
 	var fixH = 140;
 	var fixContent = document.querySelector('.fixInfo');
