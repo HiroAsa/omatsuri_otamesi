@@ -15,15 +15,45 @@
 </head>
 
 <body>
-
+<!--wrap-->
+	<div class="wrap">
 	<!-----header----->
 	<header id="header" class="header">
 		<h1 class="header_siteTitle"></h1>
 	</header>
 
+			<!--twitter-button-->
+			<div class="twitter-button">
+				<a href="#leftSlidebar" class="slide-button">
+					<img src="common/img/Twitter_Logo_Blue.svg" width="40" height="40" alt="ツイッター">
+				</a>
+			</div>
 	<!-----main-img----->
 	<article class="mainImg"></article>
 
+	<!--leftSlidebar-->
+		<div id="leftSlidebar">
+			<div>
+				<a class="twitter-timeline" href="https://twitter.com/search?q=%E6%9D%BE%E6%88%B8%E8%8A%B1%E7%81%AB%E5%A4%A7%E4%BC%9A" data-widget-id="869439433912721409">松戸花火大会に関するツイート</a>
+				<script>
+					! function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0],
+							p = /^http:/.test(d.location) ? 'http' : 'https';
+						if (!d.getElementById(id)) {
+							js = d.createElement(s);
+							js.id = id;
+							js.src = p + "://platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js, fjs);
+						}
+					}(document, "script", "twitter-wjs");
+
+				</script>
+
+
+			</div>
+		</div>
+
+	
 	<!-----home----->
 	<article class="home">
 		<section class="home_date">
@@ -59,14 +89,12 @@
 		</a>
 	</div>
 
-	<!-----fixInfo----->
-	<div class="fixInfo">
-	</div>
+
 
 	<!-----footer----->
 	<footer>
 	</footer>
-
+	</div>
 	<!-----js----->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
