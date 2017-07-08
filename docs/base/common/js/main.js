@@ -12,9 +12,9 @@
 	/*-----infoButton twitterButton設定-----*/
 	function leftButton() {
 		var windowH = window.innerHeight || document.documentElement.clientHeight;
-		var infoButton = document.querySelector('.info-button');
+		
 		var twitterButton = document.querySelector('.twitter-button');
-		infoButton.style.top = windowH - 150 + 'px';
+		
 		twitterButton.style.top = windowH - 90 + 'px';
 	}
 	$(window).on('load resize orientationchange', function () {
