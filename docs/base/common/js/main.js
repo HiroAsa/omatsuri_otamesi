@@ -10,16 +10,18 @@
 
 	
 	/*-----infoButton twitterButton設定-----*/
-	function leftButton() {
+/*	function leftButton() {
 		var windowH = window.innerHeight || document.documentElement.clientHeight;
 		
 		var twitterButton = document.querySelector('.twitter-button');
 		
 		twitterButton.style.top = windowH - 90 + 'px';
 	}
-	$(window).on('load resize orientationchange', function () {
+
+        $(window).on('load resize orientationchange', function () {
 		leftButton();
 	});
+*/
 	/*-----mmenu設定-----*/
 	
 
