@@ -8,33 +8,29 @@
 		easing: 'easeOutQuad'
 	});
 
-	/*-----注意案内の作成-----*/
-	//注意文の読み込み
-	$.ajax({
-		url: 'data/info.txt',
-		timeout: 1000,
-		success: function (data) {
-			if (data.length === 0) {
-				$('.fixInfo').css({
-					'display': 'none'
-				})
-			} else {
-				$('.fixInfo').append(data);
-				fixInfo();
-			}
-		},
-		error: function () {
-			alert("「お知らせ」の取得に失敗しました");
+	
+	/*-----infoButton twitterButton設定-----*/
+	function leftButton() {
+		var windowH = window.innerHeight || document.documentElement.clientHeight;
+		var infoButton = document.querySelector('.info-button');
+		var twitterButton = document.querySelector('.twitter-button');
+		infoButton.style.top = windowH - 150 + 'px';
+		twitterButton.style.top = windowH - 90 + 'px';
+	}
+	$(window).on('load resize orientationchange', function () {
+		leftButton();
+	});
+	/*-----mmenu設定-----*/
+	
+
+	$("#leftSlidebar").mmenu({
+		slidingSubmenus: false,
+		offCanvas: {
+			position: 'left',
+			zposition: 'front'
 		}
 	});
 
-	$(window).on('load resize orientationchange', function () {
-		fixInfo();
-	});
-
-	$(window).on('scroll', function () {
-		scrollInfo();
-	});
 
 	var firstH = 300;
 	var fixH = 140;
